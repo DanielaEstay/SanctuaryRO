@@ -1,0 +1,32 @@
+.contenidostaff{
+    grid-area: contenidoindex;
+    background: map-get($fondo , background );
+    border-radius: nth($size , 4 );
+    height: 120%;
+    .card-group{
+        padding: nth($size , 6 );
+        .card{
+            background: map-get($fondo , background );
+            border-radius: nth($size , 4 );
+            align-items: center;
+            padding: nth($size , 5 );
+            .card-img-top{
+                width: 40%;
+            }
+        }
+        .card-body{
+            border-radius: nth($size , 4 );
+            .card-title1{
+                text-align: center;
+                font-family: $tipografia-titulo;
+                text-shadow: map-get($texto , shadow );
+                color: nth($color , 4 );
+            }
+            .card-text{
+                text-shadow: map-get($texto , shadow );
+                color: nth($color , 4 );
+                font-family: $tipografia-general;
+            }
+        }
+    }
+}

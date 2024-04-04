@@ -1,0 +1,44 @@
+.contenidoregistro{
+    grid-area: contenidoindex;
+    background: map-get($fondo , background );
+    border-radius: nth($size , 4 );
+    .titulo_registro{
+        text-shadow: map-get($texto , shadow );
+        color: nth($color , 4 );
+        font-family: $tipografia-titulo;
+        padding-top: nth($size , 6 );
+        text-align: center;
+    }
+    .tyc_registro{
+        text-shadow: map-get($texto , shadow );
+        color: nth($color , 4 );
+        font-family: $tipografia-general;
+        padding-left: nth($size , 7 );
+        padding-right: nth($size , 7 );
+        padding-top: nth($size , 6 );
+        padding-bottom: nth($size , 4 );
+    }
+    .formregistro{
+        text-shadow: map-get($texto , shadow );
+        color: nth($color , 4 );
+        font-family: $tipografia-general;
+        .usuario{
+            margin-left: nth($size , 14 );
+        }
+        .password{
+            margin-left: 227px;
+        }
+        .secondpass{
+            margin-left: 152px;
+        }
+        .email{
+            margin-left: 176px;
+        }
+        .checkbox{
+            margin-left: nth($size , 10 );
+        }
+        .boton_crearcuenta{
+            margin-left: 360px;
+        }
+    }
+}

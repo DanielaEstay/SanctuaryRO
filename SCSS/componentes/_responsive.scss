@@ -1,0 +1,152 @@
+@media (max-width: 576px){
+    .fondo{
+        background-attachment: fixed;
+        background-size: cover;
+        background-image: url(/img/fondomobile.png);
+        .logo{
+            margin: 0;
+            .imglogo{
+                width: 80%;
+                margin-left: 15%;
+                padding: 0;
+                justify-content: center;
+            }
+        }
+        .main_index{
+            grid: mainindex;
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 100px 1800px;
+            grid-template-areas: "navbar" "contenedor";
+            margin: 0;
+            padding: 0;
+            .navbar{
+                grid-area: navbar;
+                margin: 0;
+                padding: 0;
+                background: #74ebd58f;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, #acb6e5a2, #74ebd598);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, #acb6e59f, #74ddeb88); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                .navbar-var{
+                    .navbar-item{
+                        .nav-link{
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+            .container_index{
+                grid-area: contenedor;
+                display: grid;
+                grid-template-columns: auto;
+                grid-template-rows: 150px 700px 200px 400px;
+                grid-template-areas:"carrusel" "contenidoindex" "formulario" "banners";
+                .carousel{
+                    grid-area: carrusel;
+                    margin: 0;
+                    margin-left: 5%;
+                }
+                .contenidoindex{
+                    grid-area: contenidoindex;
+                    display: grid;
+                    grid-template-columns: auto;
+                    grid-template-rows: 150px 250px 400px;
+                    grid-template-areas: "tituloindex" "textoindex" "youtube";
+                    .youtube{
+                        grid-area: youtube;
+                        margin: 0;
+                        width: 80%;
+                        height: 70%;
+                        margin-left: 10%;
+                    }
+                    .tituloindex{
+                        grid-area: tituloindex;
+                    }
+                    .bienvenida{
+                        grid-area: textoindex;
+                        padding: 0;
+                    }
+                }
+                .formulario{
+                    grid-area: formulario;
+                    height: 200px;
+                    margin-top: 10%;
+                    margin-bottom: 15%;
+                }
+                .banners{
+                    grid-area: banners;
+                    width: 60%;
+                    margin-left: 15%;
+                    margin-top: 15%;
+                }
+            }
+        }
+        .footer{
+            display: flex;
+            flex-wrap: wrap;
+            background-color: rgba(199, 188, 223, 0.342);
+            border-top: 1px dashed whitesmoke;
+            margin: 0;
+            padding: 0;
+            box-shadow: 0;
+            .derechosreservados{
+                padding:0;
+                margin: 0;
+            }
+            .logofooter{
+                margin: 0;
+                padding: 0;
+                visibility: hidden;
+            }
+            .logoragnarok{
+                margin: 0;
+                padding: 0;
+                visibility: hidden;
+            }
+        }
+    }
+    .contenidoregistro{
+        .formregistro{
+            .usuario{
+                margin-left: 105px;
+            }
+            .password{
+                margin-left: 80px;
+            }
+            .secondpass{
+                margin-left: 3px;
+            }
+            .email{
+                margin-left: 32px;
+            }
+            .checkbox{
+                margin-left: 50px;
+            }
+            .boton_crearcuenta{
+                margin-left: 200px;
+            }
+        }
+    }
+    .contenidoserverinfo{
+        grid-area: contenidoindex;
+        .encabezadotabla{
+            text-shadow: map-get($texto , shadow );
+            color: nth($color , 4 );
+            font-family: $tipografia-titulo;
+            padding-top: nth($size , 5 );
+            padding-bottom: nth($size , 5 );
+            text-align: center;
+        }
+        .tablainfo{
+            padding: 0;
+            margin: 0;
+            margin-left: 1%;
+            width: 500px;
+        }
+    }
+    .contenidostaff{
+        grid-area: contenidoindex;
+        overflow: auto;
+        margin-bottom: 25%;
+    }
+}

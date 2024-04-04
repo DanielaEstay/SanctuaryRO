@@ -1,0 +1,418 @@
+.banners:hover {
+  transform: scale(1.1);
+}
+
+.fondo {
+  background-image: url(/img/fondo.png);
+  background-attachment: fixed;
+  background-size: cover;
+}
+.fondo .logo {
+  margin-left: 17%;
+}
+.fondo .main_index {
+  margin-left: 12%;
+  margin-right: 12%;
+}
+.fondo .main_index .navbar {
+  grid-area: navbar;
+  background-image: url(/img/navbar.png);
+  height: 100px;
+  padding-left: 460px;
+  background-repeat: no-repeat;
+  font-family: "Josefin Sans", sans-serif;
+}
+.fondo .main_index .navbar .navbar-nav .nav-item .nav-link {
+  text-shadow: 0 0 3px rgb(138, 0, 218);
+  color: white;
+  font-size: x-large;
+}
+.fondo .main_index .navbar .navbar-nav .nav-item .dropdown-item {
+  text-shadow: 0 0 3px rgb(83, 14, 126);
+  color: white;
+  background-color: rgba(60, 147, 158, 0.466);
+}
+.fondo .main_index .container_index {
+  grid-area: container_index;
+  display: grid;
+  grid-template-columns: 550px 550px 360px;
+  grid-template-rows: 300px 450px;
+  grid-template-areas: "carrusel carrusel formulario" "contenidoindex contenidoindex banners";
+}
+.fondo .main_index .container_index .carousel {
+  grid-area: carrusel;
+  width: 90%;
+  margin-left: 50px;
+  margin-top: 15px;
+}
+.fondo .main_index .container_index .carousel .carousel-control-prev-icon, .fondo .main_index .container_index .carousel .carousel-control-next-icon {
+  filter: invert(108%);
+}
+.fondo .main_index .container_index .contenidoindex {
+  grid-area: contenidoindex;
+  background: linear-gradient(rgb(86, 172, 194), transparent);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 150px 300px;
+  grid-template-areas: "youtube tituloindex" "youtube textoindex";
+}
+.fondo .main_index .container_index .contenidoindex .youtube {
+  grid-area: youtube;
+  width: 90%;
+  margin-top: 70px;
+  margin-left: 30px;
+}
+.fondo .main_index .container_index .contenidoindex .tituloindex {
+  grid-area: tituloindex;
+  width: 80%;
+  font-family: "Orbitron", sans-serif;
+  padding: 15px;
+  color: white;
+  text-align: center;
+  margin-left: 50px;
+}
+.fondo .main_index .container_index .contenidoindex .bienvenida {
+  grid-area: textoindex;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: large;
+  padding: 30px;
+  text-shadow: 0 0 3px rgb(0, 156, 218);
+  color: white;
+}
+.fondo .main_index .container_index .formulario {
+  grid-area: formulario;
+  width: 80%;
+  margin-left: 30px;
+  margin-top: 15px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  padding-left: 50px;
+  padding-top: 10px;
+  background: linear-gradient(rgb(86, 172, 194), transparent);
+  font-family: "Josefin Sans", sans-serif;
+  text-shadow: 0 0 3px rgb(0, 156, 218);
+  color: white;
+}
+.fondo .main_index .container_index .banners {
+  margin-left: 10px;
+  grid-area: banners;
+}
+.fondo .main_index .container_index .banners .foro {
+  margin-left: 30px;
+}
+.fondo .main_index .container_index .banners .woe {
+  margin-left: 50px;
+}
+.fondo .footer {
+  margin-top: 200px;
+  background-color: rgba(199, 188, 223, 0.342);
+  bottom: 0;
+  height: 70px;
+  border-top: 1px dashed whitesmoke;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "derechos derechos derechos rologo logofooter";
+}
+.fondo .footer .derechosreservados {
+  grid-area: derechos;
+  font-family: "Josefin Sans", sans-serif;
+  color: rgb(98, 31, 160);
+  padding-top: 30px;
+  text-shadow: 0 0 5px rgb(250, 250, 250);
+  margin-left: 15px;
+  font-size: small;
+}
+.fondo .footer .logofooter {
+  grid-area: logofooter;
+  padding: 15px;
+}
+.fondo .footer .logoragnarok {
+  grid-area: rologo;
+  margin-left: 330px;
+}
+
+.contenidodescargas {
+  grid-area: contenidoindex;
+  background: linear-gradient(rgb(86, 172, 194), transparent);
+  border-radius: 10px;
+}
+.contenidodescargas .table-responsive {
+  text-shadow: 0 0 3px rgb(0, 156, 218);
+  color: white;
+  margin: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.contenidodescargas .alert {
+  background-color: rgba(65, 160, 184, 0.479);
+  position: relative;
+  padding: 10px;
+  margin-bottom: 0px;
+  border: 1px solid transparent;
+  border-radius: 1px;
+  height: 50px;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.contenidoregistro {
+  grid-area: contenidoindex;
+  background: linear-gradient(rgb(86, 172, 194), transparent);
+  border-radius: 10px;
+}
+.contenidoregistro .titulo_registro {
+  text-shadow: 0 0 3px rgb(0, 156, 218);
+  color: white;
+  font-family: "Orbitron", sans-serif;
+  padding-top: 30px;
+  text-align: center;
+}
+.contenidoregistro .tyc_registro {
+  text-shadow: 0 0 3px rgb(0, 156, 218);
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.contenidoregistro .formregistro {
+  text-shadow: 0 0 3px rgb(0, 156, 218);
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+}
+.contenidoregistro .formregistro .usuario {
+  margin-left: 250px;
+}
+.contenidoregistro .formregistro .password {
+  margin-left: 227px;
+}
+.contenidoregistro .formregistro .secondpass {
+  margin-left: 152px;
+}
+.contenidoregistro .formregistro .email {
+  margin-left: 176px;
+}
+.contenidoregistro .formregistro .checkbox {
+  margin-left: 100px;
+}
+.contenidoregistro .formregistro .boton_crearcuenta {
+  margin-left: 360px;
+}
+
+.contenidostaff {
+  grid-area: contenidoindex;
+  background: linear-gradient(rgb(86, 172, 194), transparent);
+  border-radius: 10px;
+  height: 120%;
+}
+.contenidostaff .card-group {
+  padding: 30px;
+}
+.contenidostaff .card-group .card {
+  background: linear-gradient(rgb(86, 172, 194), transparent);
+  border-radius: 10px;
+  align-items: center;
+  padding: 15px;
+}
+.contenidostaff .card-group .card .card-img-top {
+  width: 40%;
+}
+.contenidostaff .card-group .card-body {
+  border-radius: 10px;
+}
+.contenidostaff .card-group .card-body .card-title1 {
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  text-shadow: 0 0 3px rgb(0, 156, 218);
+  color: white;
+}
+.contenidostaff .card-group .card-body .card-text {
+  text-shadow: 0 0 3px rgb(0, 156, 218);
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.contenidoserverinfo {
+  grid-area: contenidoindex;
+  background: linear-gradient(rgb(86, 172, 194), transparent);
+  border-radius: 10px;
+}
+.contenidoserverinfo .encabezadotabla {
+  text-shadow: 0 0 3px rgb(0, 156, 218);
+  color: white;
+  font-family: "Orbitron", sans-serif;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+.contenidoserverinfo .tablainfo {
+  margin-left: 200px;
+  padding: 15px;
+  width: 700px;
+}
+.contenidoserverinfo .tablainfo .tituloinfo {
+  border: 1px solid rgba(112, 202, 224, 0.699);
+  text-shadow: 0 0 3px rgb(0, 156, 218);
+  color: white;
+  font-family: "Orbitron", sans-serif;
+  text-align: center;
+  background-color: rgba(60, 15, 112, 0.329);
+  width: 100%;
+}
+.contenidoserverinfo .tablainfo .columntabla {
+  border: 1px solid rgba(112, 202, 224, 0.699);
+  padding-left: 30px;
+  text-shadow: 0 0 3px rgb(0, 156, 218);
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: rgba(245, 204, 229, 0.425);
+}
+
+@media (max-width: 576px) {
+  .fondo {
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url(/img/fondomobile.png);
+  }
+  .fondo .logo {
+    margin: 0;
+  }
+  .fondo .logo .imglogo {
+    width: 80%;
+    margin-left: 15%;
+    padding: 0;
+    justify-content: center;
+  }
+  .fondo .main_index {
+    grid: mainindex;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 1800px;
+    grid-template-areas: "navbar" "contenedor";
+    margin: 0;
+    padding: 0;
+  }
+  .fondo .main_index .navbar {
+    grid-area: navbar;
+    margin: 0;
+    padding: 0;
+    background: rgba(116, 235, 213, 0.5607843137); /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgba(172, 182, 229, 0.6352941176), rgba(116, 235, 213, 0.5960784314)); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(172, 182, 229, 0.6235294118), rgba(116, 221, 235, 0.5333333333)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  .fondo .main_index .navbar .navbar-var .navbar-item .nav-link {
+    padding: 0;
+  }
+  .fondo .main_index .container_index {
+    grid-area: contenedor;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 150px 700px 200px 400px;
+    grid-template-areas: "carrusel" "contenidoindex" "formulario" "banners";
+  }
+  .fondo .main_index .container_index .carousel {
+    grid-area: carrusel;
+    margin: 0;
+    margin-left: 5%;
+  }
+  .fondo .main_index .container_index .contenidoindex {
+    grid-area: contenidoindex;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 150px 250px 400px;
+    grid-template-areas: "tituloindex" "textoindex" "youtube";
+  }
+  .fondo .main_index .container_index .contenidoindex .youtube {
+    grid-area: youtube;
+    margin: 0;
+    width: 80%;
+    height: 70%;
+    margin-left: 10%;
+  }
+  .fondo .main_index .container_index .contenidoindex .tituloindex {
+    grid-area: tituloindex;
+  }
+  .fondo .main_index .container_index .contenidoindex .bienvenida {
+    grid-area: textoindex;
+    padding: 0;
+  }
+  .fondo .main_index .container_index .formulario {
+    grid-area: formulario;
+    height: 200px;
+    margin-top: 10%;
+    margin-bottom: 15%;
+  }
+  .fondo .main_index .container_index .banners {
+    grid-area: banners;
+    width: 60%;
+    margin-left: 15%;
+    margin-top: 15%;
+  }
+  .fondo .footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(199, 188, 223, 0.342);
+    border-top: 1px dashed whitesmoke;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0;
+  }
+  .fondo .footer .derechosreservados {
+    padding: 0;
+    margin: 0;
+  }
+  .fondo .footer .logofooter {
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+  }
+  .fondo .footer .logoragnarok {
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+  }
+  .contenidoregistro .formregistro .usuario {
+    margin-left: 105px;
+  }
+  .contenidoregistro .formregistro .password {
+    margin-left: 80px;
+  }
+  .contenidoregistro .formregistro .secondpass {
+    margin-left: 3px;
+  }
+  .contenidoregistro .formregistro .email {
+    margin-left: 32px;
+  }
+  .contenidoregistro .formregistro .checkbox {
+    margin-left: 50px;
+  }
+  .contenidoregistro .formregistro .boton_crearcuenta {
+    margin-left: 200px;
+  }
+  .contenidoserverinfo {
+    grid-area: contenidoindex;
+  }
+  .contenidoserverinfo .encabezadotabla {
+    text-shadow: 0 0 3px rgb(0, 156, 218);
+    color: white;
+    font-family: "Orbitron", sans-serif;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+  .contenidoserverinfo .tablainfo {
+    padding: 0;
+    margin: 0;
+    margin-left: 1%;
+    width: 500px;
+  }
+  .contenidostaff {
+    grid-area: contenidoindex;
+    overflow: auto;
+    margin-bottom: 25%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,35 @@
+.contenidoserverinfo{
+    grid-area: contenidoindex;
+    background: map-get($fondo , background );
+    border-radius: nth($size , 4 );
+    .encabezadotabla{
+        text-shadow: map-get($texto , shadow );
+        color: nth($color , 4 );
+        font-family: $tipografia-titulo;
+        padding-top: nth($size , 5 );
+        padding-bottom: nth($size , 5 );
+        text-align: center;
+    }
+    .tablainfo{
+        margin-left: nth($size , 12 );
+        padding: nth($size , 5 );
+        width: 700px;
+        .tituloinfo{
+            border: 1px solid rgba(112, 202, 224, 0.699);
+            text-shadow: map-get($texto , shadow );
+            color: nth($color , 4 );
+            font-family: $tipografia-titulo;
+            text-align: center;
+            background-color: nth($color , 7 );
+            width: 100%;
+        }
+        .columntabla{
+            border: 1px solid rgba(112, 202, 224, 0.699);
+            padding-left: nth($size , 6 );
+            text-shadow: map-get($texto , shadow );
+            color: nth($color , 4 );
+            font-family: $tipografia-general;
+            background-color: nth($color , 2 );
+        }
+    }
+}
