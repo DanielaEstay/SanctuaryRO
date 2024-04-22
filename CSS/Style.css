@@ -3,7 +3,7 @@
 }
 
 body {
-  background-image: url(.../img/fondo.png);
+  background-image: url(../img/fondo.png);
   height: 100%;
   background-attachment: fixed;
   background-size: cover;
@@ -17,7 +17,7 @@ body .main_index {
 }
 body .main_index .navbar {
   grid-area: navbar;
-  background-image: url(.../img/navbar.png);
+  background-image: url(../img/navbar.png);
   height: 100px;
   padding-left: 460px;
   background-repeat: no-repeat;
@@ -275,7 +275,7 @@ body .footer .logoragnarok {
   .fondo {
     background-attachment: fixed;
     background-size: cover;
-    background-image: url(/img/fondomobile.png);
+    background-image: url(../img/fondomobile.png);
   }
   .fondo .logo {
     margin: 0;
