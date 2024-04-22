@@ -1,5 +1,6 @@
-.fondo{
-    background-image: url(/img/fondo.png);
+body{
+    background-image: url(.../img/fondo.png);
+    height: 100%;
     background-attachment: fixed;
     background-size: cover;
     .logo{
@@ -10,7 +11,7 @@
         margin-right: nth($size , 20 );
         .navbar{
             grid-area: navbar;
-            background-image: url(/img/navbar.png);
+            background-image: url(.../img/navbar.png);
             height: nth($size , 10 );
             padding-left: nth($size, 16 );
             background-repeat: no-repeat;

@@ -2,53 +2,54 @@
   transform: scale(1.1);
 }
 
-.fondo {
-  background-image: url(/img/fondo.png);
+body {
+  background-image: url(.../img/fondo.png);
+  height: 100%;
   background-attachment: fixed;
   background-size: cover;
 }
-.fondo .logo {
+body .logo {
   margin-left: 17%;
 }
-.fondo .main_index {
+body .main_index {
   margin-left: 12%;
   margin-right: 12%;
 }
-.fondo .main_index .navbar {
+body .main_index .navbar {
   grid-area: navbar;
-  background-image: url(/img/navbar.png);
+  background-image: url(.../img/navbar.png);
   height: 100px;
   padding-left: 460px;
   background-repeat: no-repeat;
   font-family: "Josefin Sans", sans-serif;
 }
-.fondo .main_index .navbar .navbar-nav .nav-item .nav-link {
+body .main_index .navbar .navbar-nav .nav-item .nav-link {
   text-shadow: 0 0 3px rgb(138, 0, 218);
   color: white;
   font-size: x-large;
 }
-.fondo .main_index .navbar .navbar-nav .nav-item .dropdown-item {
+body .main_index .navbar .navbar-nav .nav-item .dropdown-item {
   text-shadow: 0 0 3px rgb(83, 14, 126);
   color: white;
   background-color: rgba(60, 147, 158, 0.466);
 }
-.fondo .main_index .container_index {
+body .main_index .container_index {
   grid-area: container_index;
   display: grid;
   grid-template-columns: 550px 550px 360px;
   grid-template-rows: 300px 450px;
   grid-template-areas: "carrusel carrusel formulario" "contenidoindex contenidoindex banners";
 }
-.fondo .main_index .container_index .carousel {
+body .main_index .container_index .carousel {
   grid-area: carrusel;
   width: 90%;
   margin-left: 50px;
   margin-top: 15px;
 }
-.fondo .main_index .container_index .carousel .carousel-control-prev-icon, .fondo .main_index .container_index .carousel .carousel-control-next-icon {
+body .main_index .container_index .carousel .carousel-control-prev-icon, body .main_index .container_index .carousel .carousel-control-next-icon {
   filter: invert(108%);
 }
-.fondo .main_index .container_index .contenidoindex {
+body .main_index .container_index .contenidoindex {
   grid-area: contenidoindex;
   background: linear-gradient(rgb(86, 172, 194), transparent);
   border-radius: 10px;
@@ -57,13 +58,13 @@
   grid-template-rows: 150px 300px;
   grid-template-areas: "youtube tituloindex" "youtube textoindex";
 }
-.fondo .main_index .container_index .contenidoindex .youtube {
+body .main_index .container_index .contenidoindex .youtube {
   grid-area: youtube;
   width: 90%;
   margin-top: 70px;
   margin-left: 30px;
 }
-.fondo .main_index .container_index .contenidoindex .tituloindex {
+body .main_index .container_index .contenidoindex .tituloindex {
   grid-area: tituloindex;
   width: 80%;
   font-family: "Orbitron", sans-serif;
@@ -72,7 +73,7 @@
   text-align: center;
   margin-left: 50px;
 }
-.fondo .main_index .container_index .contenidoindex .bienvenida {
+body .main_index .container_index .contenidoindex .bienvenida {
   grid-area: textoindex;
   font-family: "Josefin Sans", sans-serif;
   font-size: large;
@@ -80,7 +81,7 @@
   text-shadow: 0 0 3px rgb(0, 156, 218);
   color: white;
 }
-.fondo .main_index .container_index .formulario {
+body .main_index .container_index .formulario {
   grid-area: formulario;
   width: 80%;
   margin-left: 30px;
@@ -94,17 +95,17 @@
   text-shadow: 0 0 3px rgb(0, 156, 218);
   color: white;
 }
-.fondo .main_index .container_index .banners {
+body .main_index .container_index .banners {
   margin-left: 10px;
   grid-area: banners;
 }
-.fondo .main_index .container_index .banners .foro {
+body .main_index .container_index .banners .foro {
   margin-left: 30px;
 }
-.fondo .main_index .container_index .banners .woe {
+body .main_index .container_index .banners .woe {
   margin-left: 50px;
 }
-.fondo .footer {
+body .footer {
   margin-top: 200px;
   background-color: rgba(199, 188, 223, 0.342);
   bottom: 0;
@@ -115,7 +116,7 @@
   grid-template-rows: auto;
   grid-template-areas: "derechos derechos derechos rologo logofooter";
 }
-.fondo .footer .derechosreservados {
+body .footer .derechosreservados {
   grid-area: derechos;
   font-family: "Josefin Sans", sans-serif;
   color: rgb(98, 31, 160);
@@ -124,11 +125,11 @@
   margin-left: 15px;
   font-size: small;
 }
-.fondo .footer .logofooter {
+body .footer .logofooter {
   grid-area: logofooter;
   padding: 15px;
 }
-.fondo .footer .logoragnarok {
+body .footer .logoragnarok {
   grid-area: rologo;
   margin-left: 330px;
 }
